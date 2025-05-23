@@ -1,0 +1,5 @@
+{:deps true
+ :builds {:mini {:target :node-script
+                 :main mini.script/main
+                 :output-to "dist/script.js"
+                 :build-hooks [(mini.configure-hook/hook {:output-to "public/css/main.css"})]}}}
